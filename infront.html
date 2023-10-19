@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today Ui Quiz</title>
+</head>
+<body>
+   <div>
+    <h1><b>Q1 : </b>What is console.log()</h1>
+    <p><b>Console.log()</b> method outputs a message to the web console. The message may be a single string (With optional substitution values), or it may be any more Javascript objects.</p>
+    <br>
+    <p>
+        <b>syntax</b> <br>
+        let a = 10; <br>
+        let b = 12; <br>
+        c = a + b;  <br>
+        console.log(c)
+        <br><b>please open console</b>
+    </p>
+</div>
+
+<div>
+    <h1><b>Q2 : </b>What is alert()</h1>
+    <p><b>alert()</b> This function will display text in a dialog box that pops up on the screen.</p>
+    <p>
+        <b>syntax</b><br>
+        alert("hello i am working");
+    </p>
+</div>
+
+<div>
+    <h1><b>Q3 : </b>Where we debug our web page Js code ?</h1>
+    <p><b>Js code debuging</b> Debugging is not easy. But fortunately, all modern browsers have a built-in javascript debugger. <br>
+        <b>The debugger Keyword</b><br>
+        The <u>debugger</u> keyword stops the execution of Javascript, and calls(if available) the Debugging function.
+        <br>
+        This has the same function as setting a breakpoint in the debugger.
+        <br>
+        If no Debugging is available, the debugger statement has no effect.
+        <br>
+        With the debugger turned on, this code will stop executing before it executes the third line.
+        <br>
+        <b>syntax: </b>
+        <p id="deb"></p>
+        <br>
+    </p>
+</div>
+
+<div>
+    <h1><b>Q4 :</b>How we can define variable in Js ?</h1>
+    <p><b>Variable Decration</b> Javascript variable can  be declared in 4 ways: <br>
+    <ul>
+        <li>Automatically</li>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ul>
+<br>
+<b>First Automatically <br>
+<p id="automatic"></p>
+    </b><br>
+
+<b>var <br>
+ <p id="vartype"></p>
+  </b><br>
+
+<b>let </b><br>
+  <p id="lettype"></p>
+  <br>
+
+<b>const</b><br>
+<p id="consttype"></p>
+<br>
+</p>
+</div>
+
+
+    <script>
+        <!-- console.log() -->
+        let a = 10;
+        let b = 12;
+        c = a+b;
+        console.log(c);
+
+
+        alert("hello, I am working");
+
+
+        let x = 10*3;
+        debugger;
+        document.getElementById("deb").innerHTML = x;
+
+
+        m = 5;
+        n = 6;
+        o = m + n ;
+        document.getElementById("automatic").innerHTML = o;
+
+        var l = 569;
+        var c = 859;
+       var g = l + c;
+        document.getElementById("vartype").innerHTML = g;
+
+       let s = 5895;
+       let u = 854;
+       let sm = s + u ;
+        document.getElementById("lettype").innerHTML = sm;
+
+        const first = "Ramesh";
+        const last = "Singh";
+        const name = first + ' ' + last;
+        document.getElementById("consttype").innerHTML = name;
+
+    </script>
+</body>
+</html>
